@@ -1,0 +1,45 @@
+.formHolder{
+    background-color: rgb(150, 150, 150);
+    padding:10px;
+    width:60%;
+   display: flex;
+   justify-content: center;
+}
+.formHolder form{
+    bordeR:0px solid green;
+    width:90%
+}
+.group-controls{
+    margin-block:10px;
+    text-align: center;
+}
+.group-controls label{
+    display:block;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.group-controls input,
+.group-controls select{
+    width:100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    outline:0;
+    border:0
+}
+.group-controls input[type="checkbox"]{
+    transform: scale(1.5);
+}
+.group-controls button{
+    padding:5px;
+    color:white;
+    background-color: orangered;
+    border:0;
+    outline:0;
+    font-size: 20px;
+}
+.disabled{
+    cursor: none;
+    background-color: black !important;
+}
