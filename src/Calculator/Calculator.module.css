@@ -1,0 +1,56 @@
+.formHolder{
+    padding:20px;
+
+    & form{
+        & fieldset {
+            padding:10px;
+            & legend {
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.group_controls{
+margin-block: 10px;
+& label{
+    display: block;
+    color:white;
+    text-transform: capitalize;
+}
+& input{
+    padding:10px;
+    border-radius: 5px;
+    outline: 0;
+    border:0;
+    color:orange
+}
+& button {
+    background-color: white;
+    color:orange;
+    bordeR:0;
+    padding:10px
+}
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+
+    & button {
+        flex:1;
+        cursor: pointer;
+    }
+}
+
+.dialog {
+    position: absolute;
+    inset:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    font-size: 50px;
+    font-weight:bold;
+}

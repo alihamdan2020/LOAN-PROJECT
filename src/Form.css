@@ -4,6 +4,9 @@
     width:60%;
    display: flex;
    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap:10px
 }
 .formHolder form{
     bordeR:0px solid green;

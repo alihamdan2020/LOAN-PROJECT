@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import Form from "./Form"
+import Calculator from "./Calculator/Calculator"
+import Gallery from './Gallery/Gallery'
 import Header from './Header/Header'
+import { Route, Routes} from 'react-router-dom'
 
+import { useContext } from 'react'
+import { userContext } from './contexts/GlobalContext'
 
 
 export default function App() {
@@ -9,12 +14,18 @@ export default function App() {
     <div>
       <Header/>
       <main>
-        
-        <Form/>
-        <div>
-          <h3>THIS DIV whoo display info when you click test button EXIST IN APP.JSX WHILE THE FUNCTION EXIST INSIDE FORM.JSX</h3>
-        <div id="result"></div>
-        </div>
+          <userContext.Provider
+            value={{
+              name:"ali",
+              family:"hamdan"
+            }}>
+        <Routes>
+        <Route path="/" element={<Form/>}/>
+        <Route path="/calculator" element={<Calculator/>}/>
+        <Route path="/gallery" element={<Gallery/>}/>
+        </Routes>
+        </userContext.Provider>
+       
       </main>
     </div>
   )

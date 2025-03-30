@@ -5,3 +5,8 @@ header{
     color: azure;
     text-transform: capitalize;
 }
+nav a{
+    margin-inline: 20px;
+    text-decoration: none;
+    color:white
+}
