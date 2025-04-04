@@ -1,0 +1,48 @@
+.formDiv form{
+    display: flex;
+    justify-content: space-between;
+}
+input[type="text"]{
+    flex:1;
+    border:0;
+    outline:0;
+    padding:5px;
+    font-size: 12px;
+    color:var(--mainColor);
+    border-radius: 5px;
+    margin-right:10px ;
+}
+ button{
+    background-color: var(--mainColor);
+    border:0px;
+    outline:0px;
+    color:white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    text-transform: capitalize;
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+ul li{
+    margin-block: 10px;
+    padding-left: 10px;
+    background-color: #eee;
+    padding-block: 20px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    text-transform: capitalize;
+    display: flex;
+}
+ul li :nth-child(2 of p){
+    color:red;
+    margin-left: auto;
+    padding-inline: 10px;
+    cursor:pointer
+}
+li i {
+    margin-inline: 5px;
+}

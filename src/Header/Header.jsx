@@ -8,6 +8,7 @@ export default function Header(){
                 <Link to='/'>loan form</Link>
                 <Link to='/calculator'>calculator</Link>
                 <Link to='/gallery'>Gallery</Link>
+                <Link to='/todo'>To Do List</Link>
             </nav>
         </header>
     )
